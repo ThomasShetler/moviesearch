@@ -32,12 +32,12 @@ curl_setopt_array($curl, [
 
 $response = curl_exec($curl);
 $decode = json_decode($response, true);
-$result = $decode[];
+
 $arrayLength = count($decode);
 $i = 0;
 $err = curl_error($curl);
 $parsed = array();
-
+$directors = $decode['directors'];
 curl_close($curl);
 
 if ($err) {
@@ -45,21 +45,15 @@ if ($err) {
 } else {
     echo '<div class="container">';
     echo '<b>News by Your query:</b>';
-    foreach ($result as $post) {
-       echo '<h3>' . $post['title'] . '</h3>';
+       echo '<h3>' . $decode['title'] . '</h3>';
        echo '<br>';
-       echo '<p>directors:' . $post['directors'] . '</p>';
+       echo "directors: ";
+       print_r($directors);
        echo '<br>';
-       echo '<p>IMDB raiting:' . $post['imdb_rating'] . '</p>';
+       echo '<p>IMDB raiting:' . $decode['imdb_rating'] . '</p>';
        echo '<br>';
-       echo '<p>Description'. $post['description'] . '</p>';
-       echo '<form method="get" action="details.php">';
-       echo '<input type="hidden" method="get" placeholder="take a look" value="'.$post['imdb_id'].'" name="id"/>';
-        echo '<button type="submit" name="submit">Take a look</button>';
-        echo '</form>';
+       echo '<p>Description'. $decode['description'] . '</p>';
        echo '<hr>';
-       
-    }
     echo '</div>';
 }
 ?>
