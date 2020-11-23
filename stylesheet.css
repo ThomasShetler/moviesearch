@@ -1,0 +1,48 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    background: linear-gradient(270deg, #5232d4, #c52baa, #c52b2b);
+    background-size: 600% 600%;
+
+    -webkit-animation: beautify 30s ease infinite;
+    -moz-animation: beautify 30s ease infinite;
+    -o-animation: beautify 30s ease infinite;
+    animation: beautify 30s ease infinite;
+}
+#searchbar {
+    top: 40px;
+    justify-content: center;
+    text-align: center;
+ 
+}
+.container{
+/* background-color: rgba(255,255,255,0.5); */
+    color: white;
+  
+}
+#index {
+    text-align: center;
+}
+nav {
+    background-color: rgba(255,255,255,0.5);
+}
+@-webkit-keyframes beautify {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes beautify {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes beautify {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes beautify {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

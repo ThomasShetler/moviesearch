@@ -4,16 +4,19 @@
 <head>
   <title>News Searcher</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <form class="form-inline" action="" method="get">
-          <label for="query ">Enter your query string:</label>
-          <input id="query"  class="form-control mr-sm-2" type="search" aria-label="Search" placeholder="Search" name="query" />
+<?php include "navbar.php" ?>
+<div class="container" id="index">
+  <form id="searchbar" class="form mt-5 mx-4 " action="" method="get">
+          <input id="query" class="form-control mr-sm-2" type="search" aria-label="Search" placeholder="Enter your movie title" name="query" />
           <br />
-          <button type="submit" class="btn btn-outline-success my-2 my-sm-0" name="submit">Search</button>
+          <button type="submit" class="btn btn-success my-2 my-sm-0" name="submit">Search</button>
   </form>
   <br />
 <?php
+
 require 'unirest-php\src\Unirest.php';
 
 if (isset($_GET['query']) && $_GET['query'] != '') {
@@ -55,7 +58,7 @@ if ($err) {
        echo '<p>Date Published: ' . $post['year'] . '</p>';
        echo '<form method="get" action="details.php">';
        echo '<input type="hidden" method="get" placeholder="take a look" value="'.$post['imdb_id'].'" name="id"/>';
-        echo '<button type="submit" name="submit">Take a look</button>';
+        echo '<button class="btn btn-info" type="submit" name="submit">Take a look</button>';
         echo '</form>';
        echo '<hr>';
        
