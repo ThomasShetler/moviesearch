@@ -1,10 +1,12 @@
 # Installation
 
-ITS HIGHLY RECOMMENDED YOU WATCH THE TUTORIAL I MADE:
+### ITS HIGHLY RECOMMENDED YOU WATCH THE TUTORIAL I MADE:
 
 https://youtu.be/nmO7RWHqrp4
 
-IT SHOWS ACTIVE AND LIVE EXAMPLES OF INSTALLATION AND THE SITE RUNNING!
+### IT SHOWS ACTIVE AND LIVE EXAMPLES OF INSTALLATION AND THE SITE RUNNING!
+
+## MANUAL STEPS
 
 1. firstly we need to have a program called XAMPP installed you can find a link to that download here:
    https://www.apachefriends.org/download.html
