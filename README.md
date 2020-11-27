@@ -9,7 +9,9 @@
    
 3. now of course we need the files to work on the server, so download or clone this repository to "htdocs" folder found in the "xampp" directory. if you didn't set a specific        location for XAMPP to be installed, you can find xampp folders in your default drive ( on most windows computers that would be:  C:\xampp\htdocs  ).
 
-4. navigate into htdocs folder and in the "moviesearch" folder move the "moviedb" folder to the mysql data directory folder at xampp\mysql\data 
+4. navigate into htdocs folder and the "moviesearch-main" folder can be found there, and if there is a folder within that folder also called "moviesearch-main" remove it from the parent folder and move it to "htdocs" folder. rename the folder to "moviesearch" and remove the empty parent folder.
+
+5. in "htdocs" move the "moviedb" folder to the mysql data directory folder at xampp\mysql\data 
    (default location C:\xampp\mysql\data) 
    
 5. now open your web browser of choice either type in localhost/moviesearch/index.php or just click here http://localhost/moviesearch/index.php (make sure you have XAMPP running      with the Apache and mySQL modules running)
