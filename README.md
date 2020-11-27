@@ -1,5 +1,11 @@
 # Installation
 
+ITS HIGHLY RECOMMENDED YOU WATCH THE TUTORIAL I MADE:
+
+https://youtu.be/nmO7RWHqrp4
+
+IT SHOWS ACTIVE AND LIVE EXAMPLES OF INSTALLATION AND THE SITE RUNNING!
+
 1. firstly we need to have a program called XAMPP installed you can find a link to that download here:
    https://www.apachefriends.org/download.html
    XAMPP is basically a mini PHP server run on your local host.
@@ -15,6 +21,9 @@
    (default location C:\xampp\mysql\data) 
    
 5. now open your web browser of choice either type in localhost/moviesearch/index.php or just click here http://localhost/moviesearch/index.php (make sure you have XAMPP running      with the Apache and mySQL modules running)
+
+Should get a page that looks like this without the results!
+
 ![Movii search](movii.png)
 
 if you have any questions please send me a email at thomas.ja.shetler@gmail.com
