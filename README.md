@@ -15,5 +15,6 @@
    (default location C:\xampp\mysql\data) 
    
 5. now open your web browser of choice either type in localhost/moviesearch/index.php or just click here http://localhost/moviesearch/index.php (make sure you have XAMPP running      with the Apache and mySQL modules running)
+![Movii search](movii.png)
 
 if you have any questions please send me a email at thomas.ja.shetler@gmail.com
